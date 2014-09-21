@@ -1,0 +1,15 @@
+* { font-family: Arial; }
+
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+div.wrapper {
+    margin: 0 auto;
+    display: inline-block;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Non-Random Shuffle Experiment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="shuffler.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <h1>Non-Random Shuffle Experiment</h1>
+        <div class="wrapper">
+            Enter the size of the test deck:
+            <input id="deckSize" value="5"/>
+        </div><br/>
+        <h2>Top-Bottom-Top Shuffle</h2>
+        
+        <div class="wrapper">
+            <button onclick="shuffleLoop(topBottomTopShuffle)">
+                Top-Bottom-Top Shuffle
+            </button>
+        </div><br/>
+        
+        <h2>Pile Shuffling</h2>
+        
+        <div class="wrapper">
+            Enter the number of piles:
+            <input id="numPiles" value="3"/>
+            <button onclick="shuffleLoop(pileShuffle)">
+                Pile Shuffle
+            </button>
+        </div><br/>
+        
+        <div class="wrapper">
+            <button onclick="idealPileShuffle()">
+                Ideal Pile Shuffle
+            </button>
+        </div>
+        
+        <p id="shuffleText"></p>
+    </body>
+</html>
